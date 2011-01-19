@@ -1,0 +1,19 @@
+<package>
+  <description brief="project1_map">
+
+    Node to publish map/odom transforms, 
+    read pose messages from rviz, 
+    put the robot into the correct place on the map based on the pose message
+
+  </description>
+  <author>Team Robot Unicorn</author>
+  <license>BSD</license>
+  <review status="unreviewed" notes=""/>
+  <depend package="roscpp" />
+  <depend package="std_msgs" />
+  <depend package="nav_msgs" />
+  <depend package="geometry_msgs" />
+  <depend package="tf" />
+</package>
+
+

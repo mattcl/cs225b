@@ -1,0 +1,6 @@
+<launch>
+	<node pkg="stage" name="stage" type="stageros" args="$(find gradient_planner)/world/gates-erratic.world" />
+	<node pkg="map_server" name="map_server" type="map_server" args="$(find gradient_planner)/world/gates.haml" />
+	<node pkg="gradient_planner" name="gradient_planner" type="gradient_planner" />
+	<node pkg="gradient_visualizer" name="gradient_visualizer" type="gradient_visualizer" args="5 1" />
+</launch>

@@ -1,0 +1,43 @@
+######### Motion Model parameters #########
+messaging_frequency: 3
+
+initial_number_of_poses: 1000
+motion_error_mean_linear: 0.0 
+motion_error_variance_linear: 0.1
+motion_error_mean_angular: 0.0
+motion_error_variance_angular: 0.02
+pose_update_linear: 0.3
+
+# resulting will be M_PI / value
+pose_update_angular_denominator: 20.0
+
+do_uniform: false
+wait_on_uniform: 30
+
+######### Sensor Model Parameters ##########
+use_odom_correction: true
+
+num_scans_to_use: 25
+
+# Likelihood field parameters
+laser_range: 12.0
+alpha0: 0.5
+sigma: 3
+
+# KLD parameters
+pos_resolution: 10.0
+theta_resolution: 100.0
+epsilon: 0.2
+z: 2.32
+max_k: 5000
+min_k: 400
+
+using_gaussian_during_resample: true
+resample_x_mean: 0.0
+resample_x_var: 0.05
+
+resample_y_mean: 0.0
+resample_y_var: 0.0175
+
+resample_t_mean: 0.0
+resample_t_var: 0.025

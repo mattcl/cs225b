@@ -1,0 +1,5 @@
+<launch>
+	<node pkg="robot_pose" name="robot_pose" type="robot_pose" launch-prefix="xterm -e">
+		<rosparam file="$(find robot_pose)/config/main_config.yaml" command="load" />
+	</node>
+</launch>

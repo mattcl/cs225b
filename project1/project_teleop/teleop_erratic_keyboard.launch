@@ -1,0 +1,6 @@
+<launch>
+  <!-- start teleop node -->
+  <node pkg="project_teleop" type="teleop_erratic_keyboard" output="screen" name="teleoper" >
+    <remap from="base_controller/command" to="/cmd_vel" />
+  </node>
+</launch>

@@ -1,0 +1,7 @@
+to launch:
+roslaunch robot_pose testing.launch
+roslaunch robot_pose robot_pose.launch
+
+configuration options in config dir
+
+requires gradient_planner and gradient_visualizer from project 2

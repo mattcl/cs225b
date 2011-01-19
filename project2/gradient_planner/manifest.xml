@@ -1,0 +1,17 @@
+<package>
+  <description brief="gradient_planner">
+
+     gradient_planner
+
+  </description>
+  <author>Matthew Chun-Lum</author>
+  <license>BSD</license>
+  <review status="unreviewed" notes=""/>
+  <depend package="roscpp"/>
+	<depend package="std_msgs"/>
+	<depend package="nav_msgs"/>
+	<depend package="geometry_msgs"/>
+	<depend package="tf"/>
+</package>
+
+

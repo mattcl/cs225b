@@ -1,0 +1,19 @@
+<package>
+  <description brief="project_teleop">
+
+     project_teleop
+
+  </description>
+  <author>Arunanshu</author>
+  <license>BSD</license>
+  <review status="unreviewed" notes=""/>
+  <url>http://ros.org/wiki/project_teleop</url>
+  <depend package="roscpp"/>
+  <depend package="rospy"/>
+  <depend package="std_msgs"/>
+  <depend package="nav_msgs"/>
+  <depend package="geometry_msgs"/>
+  <depend package="tf" />
+</package>
+
+

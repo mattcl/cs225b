@@ -1,0 +1,17 @@
+<package>
+  <description brief="local_planner">
+
+     local_planner
+
+  </description>
+  <author>Matthew Chun-Lum</author>
+  <license>BSD</license>
+  <review status="unreviewed" notes=""/>
+  <url>http://ros.org/wiki/local_planner</url>
+  <depend package="roscpp"/>
+  <depend package="gradient_planner"/>
+  <depend package="visualization_msgs" />
+
+</package>
+
+

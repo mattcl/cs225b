@@ -1,0 +1,25 @@
+<launch>
+  <arg name="part1" default="0" />
+  <arg name="part2" default="0" />
+  <arg name="part3" default="0" />
+  <arg name="part4" default="0" />
+  <arg name="all" default="0" />
+  <node pkg="stage" name="stage" type="stageros" args="$(find stage)/world/willow-erratic.world"/>
+        <group if="$(arg part1)">
+		<node pkg="project_teleop" name="project_teleop" type="teleop_erratic_keyboard">
+			<remap from="base_controller/command" to="/cmd_vel" />
+		</node>
+	</group>
+	<group if="$(arg part3)">
+		<node pkg="laser_collision" name="laser_collision" type="laser_listener" />
+	</group>
+  <group if="$(arg part4)">
+		<node pkg="map_server" name="map_server" type="map_server" args="$(find stage)/world/willow-full.pgm 0.1" />
+		<node pkg="project1_map" name="project1_map" type="project1_map" />
+  </group>
+	<group if="$(arg all)">
+		<node pkg="map_server" name="map_server" type="map_server" args="$(find stage)/world/willow-full.pgm 0.1" />
+		<node pkg="project1_map" name="project1_map" type="project1_map" />
+	</group>
+  <node pkg="rviz" name="rviz" type="rviz" />
+</launch>

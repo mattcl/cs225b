@@ -1,0 +1,16 @@
+<package>
+  <description brief="gradient_visualizer">
+
+     gradient_visualizer
+
+  </description>
+  <author>Team Robot Unicorn</author>
+  <license>BSD</license>
+  <review status="unreviewed" notes=""/>
+  <depend package="roscpp" />
+  <depend package="visualization_msgs" />
+  <depend package="geometry_msgs" />
+  <depend package="gradient_planner" />
+</package>
+
+

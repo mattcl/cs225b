@@ -1,0 +1,16 @@
+<package>
+  <description brief="path_visualizer">
+
+     path_visualizer
+
+  </description>
+  <author>Matthew Chun-Lum</author>
+  <license>BSD</license>
+  <review status="unreviewed" notes=""/>
+  <url>http://ros.org/wiki/path_visualizer</url>
+  <depend package="roscpp"/>
+  <depend package="visualization_msgs"/>
+
+</package>
+
+

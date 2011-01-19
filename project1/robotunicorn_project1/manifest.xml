@@ -1,0 +1,16 @@
+<package>
+  <description brief="robotunicorn_project1">
+
+    Team Robot Unicorn's Project 1 package
+
+  </description>
+  <author>Robot Unicorn</author>
+  <license>BSD</license>
+  <review status="unreviewed" notes=""/>
+  <depend package="project1_map" />
+  <depend package="project_teleop" />
+  <depend package="project_tf" />
+  <depend package="laser_collision" />
+</package>
+
+

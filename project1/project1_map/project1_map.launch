@@ -1,0 +1,30 @@
+<launch>
+  <arg name="part1" default="0" />
+  <arg name="part2" default="0" />
+  <arg name="part3" default="0" />
+  <arg name="part4" default="0" />
+  <arg name="all" default="0" />
+  <arg name="debug" default="0" />
+  <node pkg="stage" name="stage" type="stageros" args="$(find stage)/world/willow-erratic.world"/>
+	<group if="$(arg part1)">
+
+	</group>
+  <group if="$(arg part2)">
+
+	</group>
+	<group if="$(arg part3)">
+
+	</group>
+  <group if="$(arg part4)">
+		<node pkg="map_server" name="map_server" type="map_server" args="$(find stage)/world/willow-full.pgm 0.1" />
+		<node pkg="project1_map" name="project1_map" type="project1_map" />
+  </group>
+	<group if="$(arg all)">
+		<node pkg="map_server" name="map_server" type="map_server" args="$(find stage)/world/willow-full.pgm 0.1" />
+		<node pkg="project1_map" name="project1_map" type="project1_map" />
+	</group>
+  <node pkg="rviz" name="rviz" type="rviz" />
+	<group if="$(arg debug)">
+		<node pkg="rxgraph" name="rxgraph" type="rxgraph" />
+	</group>
+</launch>

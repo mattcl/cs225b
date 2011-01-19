@@ -1,0 +1,5 @@
+build/
+bin/
+.svn/
+tmp/
+ignore.txt

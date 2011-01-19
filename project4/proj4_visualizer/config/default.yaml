@@ -1,0 +1,3 @@
+# determines the grid resolution
+# a value of 1 is every point, 10 would be a grid spacing of 10
+grid_spacing: 1
